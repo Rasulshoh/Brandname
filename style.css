@@ -418,13 +418,15 @@ body {
   font-weight: 700;
 }
 
-.maydon div {
+.maydon input {
+  width: 100%;
   min-height: 38px;
   padding: 12px;
   border: 1px solid #dddddd;
   border-radius: 4px;
   background: #fafafa;
   color: #777777;
+  font: inherit;
   font-weight: 400;
 }
 
