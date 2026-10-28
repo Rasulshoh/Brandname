@@ -79,13 +79,27 @@ body {
   width: min(100% - 48px, 1120px);
   min-height: 520px;
   margin: 0 auto;
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 40px;
 }
 
+.qahramon::before {
+  content: "";
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 20px;
+  left: -100px;
+  border-radius: 50%;
+  background: #405472;
+}
+
 .qahramon-matn {
+  position: relative;
+  z-index: 1;
   max-width: 430px;
 }
 
@@ -135,18 +149,33 @@ body {
 }
 
 .qahramon-rasm img {
-  width: min(78%, 330px);
+  width: min(78%, 300px);
   height: auto;
   position: relative;
   z-index: 1;
+  filter:
+    drop-shadow(2px 0 0 #e53935)
+    drop-shadow(-2px 0 0 #101010)
+    drop-shadow(0 6px 4px #00000055);
 }
 
 .dairai-kalon {
-  width: 330px;
-  height: 330px;
+  width: 350px;
+  height: 350px;
   position: absolute;
   border-radius: 50%;
   background: #287eaf;
+}
+
+.dairai-kalon::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -12px;
+  left: -18px;
+  border-radius: 50%;
+  background: #405472;
 }
 
 .нишон {
@@ -522,6 +551,10 @@ body {
     text-align: center;
   }
 
+  .qahramon::before {
+    display: none;
+  }
+
   .qahramon-matn {
     margin: 0 auto;
   }
@@ -550,8 +583,8 @@ body {
   }
 
   .dairai-kalon {
-    width: 260px;
-    height: 260px;
+    width: 270px;
+    height: 270px;
   }
 
   .нишони-як {
