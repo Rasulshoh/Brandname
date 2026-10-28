@@ -1,0 +1,702 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #252b43;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sahifa {
+  width: 100%;
+  overflow: hidden;
+  background: #252b43;
+}
+
+.sarlavha {
+  width: 100%;
+  min-height: 76px;
+  position: relative;
+  z-index: 2;
+}
+
+.bar {
+  width: min(100% - 48px, 1120px);
+  min-height: 76px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.logo {
+  margin-right: auto;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.menyu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.menyu-band {
+  color: #ffffff;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.menyu-mobil {
+  display: none;
+}
+
+.asbobho {
+  display: none;
+}
+
+.daromad {
+  margin-left: auto;
+  font-size: 13px;
+}
+
+.uzv {
+  padding: 14px 18px;
+  border-radius: 4px;
+  background: #23a6f0;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.uzv span {
+  margin-left: 8px;
+}
+
+.qahramon {
+  width: min(100% - 48px, 1120px);
+  min-height: 520px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.qahramon-matn {
+  max-width: 430px;
+}
+
+.qahramon-matn h1 {
+  margin: 0 0 22px;
+  font-size: clamp(36px, 4vw, 56px);
+  line-height: 1.18;
+}
+
+.qahramon-matn p {
+  max-width: 340px;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.tugmaho {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tugma {
+  min-width: 116px;
+  min-height: 38px;
+  padding: 12px 18px;
+  border-radius: 22px;
+  background: #23a6f0;
+  color: #ffffff;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.tugma-torik {
+  border: 1px solid #ffffff;
+  background: transparent;
+}
+
+.qahramon-rasm {
+  min-height: 410px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qahramon-rasm img {
+  width: min(78%, 330px);
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.dairai-kalon {
+  width: 330px;
+  height: 330px;
+  position: absolute;
+  border-radius: 50%;
+  background: #287eaf;
+}
+
+.нишон {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  border: 5px solid #111522;
+  border-radius: 50%;
+  background: #202537;
+  box-shadow: 0 4px 8px #00000055;
+  color: #23a6f0;
+}
+
+.нишони-як {
+  top: 12px;
+  left: 18%;
+}
+
+.нишони-ду {
+  bottom: 20px;
+  left: 10%;
+}
+
+.strategiya {
+  padding: 58px 24px 90px;
+}
+
+.bahsh-sarlavha {
+  max-width: 570px;
+  margin: 0 auto 44px;
+  text-align: center;
+}
+
+.bahsh-sarlavha h2 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+.bahsh-sarlavha p {
+  margin: 0;
+  color: #9da2b2;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.хизматҳо {
+  width: min(100%, 980px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.хизмат {
+  min-height: 90px;
+  padding: 16px 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid #85899a;
+}
+
+.хизмат img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.хизмат h3 {
+  margin: 0 0 5px;
+  font-size: 12px;
+}
+
+.хизмат p {
+  margin: 0;
+  color: #d3d5dc;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.fikr {
+  padding: 70px 24px 90px;
+}
+
+.fikr-karton {
+  width: min(100%, 760px);
+  min-height: 310px;
+  margin: 0 auto;
+  padding: 30px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.fikr-karton img {
+  display: block;
+  width: min(100%, 620px);
+  height: auto;
+}
+
+.нарх {
+  padding: 70px 24px 90px;
+}
+
+.нарх-картҳо {
+  width: min(100%, 760px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.нарх-карт {
+  min-height: 185px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 10px 18px;
+  border: 1px solid #23a6f0;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.нарх-карт h3 {
+  margin: 0 0 10px;
+  color: #23a6f0;
+  font-size: 16px;
+}
+
+.нарх-карт p {
+  max-width: 220px;
+  margin: 0;
+  color: #777777;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.пул {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: #23a6f0;
+}
+
+.пул strong {
+  font-size: 26px;
+}
+
+.пул div {
+  display: grid;
+  gap: 4px;
+}
+
+.пул b {
+  font-size: 13px;
+}
+
+.пул span {
+  color: #70bafa;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.narx-tugma {
+  grid-column: 2;
+  min-width: 100px;
+  border-radius: 3px;
+}
+
+.ҷаҳон {
+  width: min(100% - 48px, 980px);
+  min-height: 300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.ҷаҳон-матн h2 {
+  max-width: 390px;
+  margin: 0 0 16px;
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+.ҷаҳон-матн p {
+  max-width: 410px;
+  margin: 0;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.ҷаҳон img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.барнома {
+  padding: 48px 24px 100px;
+}
+
+.боргириҳо {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.боргириҳо img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+.shakl-bakhsh {
+  min-height: 460px;
+  padding: 58px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafafa;
+}
+
+.shakl-kart {
+  width: min(100%, 850px);
+  min-height: 380px;
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  background: #ffffff;
+}
+
+.shakl-rasm {
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.shakl-matn {
+  padding: 28px 32px;
+  color: #252b43;
+}
+
+.shakl-matn h2 {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.maydon {
+  margin-bottom: 12px;
+  display: grid;
+  gap: 7px;
+  color: #252b43;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.maydon div {
+  min-height: 38px;
+  padding: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  background: #fafafa;
+  color: #777777;
+  font-weight: 400;
+}
+
+.shakl-tugma {
+  width: 100%;
+  min-height: 38px;
+  margin-top: 8px;
+  padding: 12px 18px;
+  border-radius: 3px;
+  background: #23a6f0;
+  color: #ffffff;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.поён {
+  padding: 50px max(24px, calc((100% - 980px) / 2));
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.поён-карт h3 {
+  margin: 0 0 18px;
+  font-size: 15px;
+}
+
+.поён-карт p {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.поён-карт img {
+  width: 90px;
+  height: auto;
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .bar {
+    width: calc(100% - 36px);
+    min-height: 62px;
+    gap: 16px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .menyu {
+    display: none;
+  }
+
+  .asbobho {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+
+  .asbob {
+    color: #ffffff;
+    font-size: 18px;
+  }
+
+  .daromad {
+    display: none;
+  }
+
+  .uzv {
+    display: none;
+  }
+
+  .menyu-mobil {
+    padding: 18px 20px 10px;
+    display: grid;
+    justify-items: center;
+    gap: 22px;
+  }
+
+  .menyu-band-mobil {
+    font-size: 18px;
+  }
+
+  .qahramon {
+    width: calc(100% - 40px);
+    min-height: 0;
+    padding: 56px 0 20px;
+    grid-template-columns: 1fr;
+    gap: 22px;
+    text-align: center;
+  }
+
+  .qahramon-matn {
+    margin: 0 auto;
+  }
+
+  .qahramon-matn h1 {
+    max-width: 360px;
+    margin: 0 auto 18px;
+    font-size: 34px;
+  }
+
+  .qahramon-matn p {
+    margin: 0 auto;
+    font-size: 14px;
+  }
+
+  .tugmaho {
+    justify-content: center;
+  }
+
+  .qahramon-rasm {
+    min-height: 320px;
+  }
+
+  .qahramon-rasm img {
+    width: min(68%, 250px);
+  }
+
+  .dairai-kalon {
+    width: 260px;
+    height: 260px;
+  }
+
+  .нишони-як {
+    left: 12%;
+  }
+
+  .нишони-ду {
+    left: 8%;
+  }
+
+  .strategiya {
+    padding: 48px 24px 65px;
+  }
+
+  .bahsh-sarlavha {
+    margin-bottom: 34px;
+  }
+
+  .bahsh-sarlavha h2 {
+    font-size: 25px;
+  }
+
+  .bahsh-sarlavha br {
+    display: none;
+  }
+
+  .хизматҳо {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .хизмат {
+    min-height: 80px;
+    padding: 10px 4px;
+    border: 0;
+  }
+
+  .хизмат img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .хизмат h3 {
+    font-size: 13px;
+  }
+
+  .fikr {
+    padding: 45px 20px 65px;
+  }
+
+  .fikr-karton {
+    min-height: 340px;
+    padding: 28px 22px;
+  }
+
+  .fikr-karton p {
+    font-size: 13px;
+  }
+
+  .нарх {
+    padding: 50px 38px 70px;
+  }
+
+  .нарх-картҳо {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .нарх-карт {
+    min-height: 255px;
+    padding: 28px;
+    grid-template-columns: 1fr;
+    align-content: start;
+    gap: 16px;
+  }
+
+  .нарх-карт p {
+    max-width: 240px;
+    font-size: 13px;
+  }
+
+  .пул strong {
+    font-size: 26px;
+  }
+
+  .narx-tugma {
+    width: 140px;
+    grid-column: 1;
+  }
+
+  .ҷаҳон {
+    width: calc(100% - 48px);
+    padding: 48px 0;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    text-align: center;
+  }
+
+  .ҷаҳон-матн h2 {
+    margin: 0 auto 14px;
+    font-size: 26px;
+  }
+
+  .ҷаҳон-матн p {
+    margin: 0 auto;
+  }
+
+  .ҷаҳон img {
+    max-width: 330px;
+    margin: 0 auto;
+  }
+
+  .барнома {
+    padding: 48px 20px 70px;
+  }
+
+  .боргириҳо {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .боргириҳо img {
+    width: min(100%, 190px);
+  }
+
+  .shakl-bakhsh {
+    min-height: 0;
+    padding: 45px 20px;
+  }
+
+  .shakl-kart {
+    grid-template-columns: 1fr;
+  }
+
+  .shakl-rasm {
+    height: 220px;
+    min-height: 0;
+  }
+
+  .shakl-matn {
+    padding: 28px 22px;
+  }
+
+  .поён {
+    padding: 48px 35px;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
