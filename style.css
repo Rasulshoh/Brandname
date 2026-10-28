@@ -178,30 +178,6 @@ body {
   background: #405472;
 }
 
-.нишон {
-  width: 42px;
-  height: 42px;
-  position: absolute;
-  z-index: 2;
-  display: grid;
-  place-items: center;
-  border: 5px solid #111522;
-  border-radius: 50%;
-  background: #202537;
-  box-shadow: 0 4px 8px #00000055;
-  color: #23a6f0;
-}
-
-.нишони-як {
-  top: 12px;
-  left: 18%;
-}
-
-.нишони-ду {
-  bottom: 20px;
-  left: 10%;
-}
-
 .strategiya {
   padding: 58px 24px 90px;
 }
@@ -585,14 +561,6 @@ body {
   .dairai-kalon {
     width: 270px;
     height: 270px;
-  }
-
-  .нишони-як {
-    left: 12%;
-  }
-
-  .нишони-ду {
-    left: 8%;
   }
 
   .strategiya {
