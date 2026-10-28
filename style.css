@@ -690,6 +690,7 @@ body {
   .shakl-rasm {
     height: 220px;
     min-height: 0;
+    object-position: center 18%;
   }
 
   .shakl-matn {
